@@ -20,11 +20,14 @@ from django.contrib import admin
 from django.urls import path
 
 from demo.views import listdir
-from demo.views import hello_view, current_time
+from demo.views import hello_view, current_time, omlet, pasta, buter
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', hello_view),
     path('current_time/', current_time),
-    path('workdir/', listdir)
+    path('workdir/', listdir),
+    path('omlet/', omlet),
+    path('pasta/', pasta),
+    path('buter/', buter)
 ]
